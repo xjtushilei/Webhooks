@@ -24,7 +24,9 @@ java执行预设命令，通过http调用，兼容linux和windows。
 ## 使用
 
 1. 在之前的数据库里，看到一张表，然后打开它，创建 指令 name 和 指令command,如name：“mvn” command：“mvn -v”
-2. 远程调用：`http://ip:port/execLinux/{name}`会自动触发该指令。 见下面例子。
+2. 远程调用：
+ - linux下 post 访问：`http://ip:port/execLinux/{name}`会自动触发该指令。 见下面例子。
+ - windows下 post 访问：`http://ip:port/execWin/{name}`会自动触发该指令。 见下面例子。
 
 
 ## 举例
