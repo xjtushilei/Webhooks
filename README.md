@@ -16,10 +16,15 @@ java执行预设命令，通过http调用，兼容linux和windows。
   spring.datasource.username=command
   spring.datasource.password=command
   ```
+3. application.properties 中修改端口号，默认8081
+
 ## 编译安装 
 
-1. 服务器安装mvn3.x，java1.8 ，tomcat8.5以上
-2. `mvn package`执行编译打包，将target目录下的war包放入tomcat启动，注意logs是否报错
+1. 服务器安装mvn3.x，java1.8 ，不需要tomcat（内嵌了tomcat）
+2. `mvn package`执行编译打包，运行 target 目录下的jar包注意logs是否报错
+3. target目录下运行：`java -jar webhooks.jar`，如果在linux下，可以后台运行`nohup java -jar webhooks.jar &`
+
+
 
 ## 使用
 
